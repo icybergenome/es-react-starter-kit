@@ -1,16 +1,21 @@
-export const sum = (n1,n2)=> {
+export const doIt = (n1,n2,perf) => {
     
-    return n1+n2; 
+
+ switch(perf) {
+    case "+":
+      return n1+n2;
+      break;
+    case "-":
+        return n1-n2;
+      break;
+    case "*":
+        return n1*n2;
+      break;
+      case "/":
+        return n1/n2;
+      break;
+    default:
+      text = "I have never heard of that one..";
+      break;
+  } 
 }
-// export const multi = (n1,n2)=> {
-    
-//     return n1*n2; 
-// }
-// export const sub = (n1,n2)=> {
-    
-//     return n1-n2; 
-// }
-// export const div = (n1,n2)=> {
-    
-//     return n1/n2; 
-// }
