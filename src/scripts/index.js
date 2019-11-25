@@ -1,4 +1,5 @@
 import '../styles/index.scss';
+import {outP} from './rander-calculator.js';
 
 const output = document.getElementById("main");
 let stream = '';
@@ -10,7 +11,9 @@ function appendOutput(string) {
 ( () => {
   const string = "Here's the output: ";
   appendOutput(string);
+  appendOutput(outP);
 
   output.innerHTML = stream;
+  
 })();
 
