@@ -1,16 +1,18 @@
+import {stop, random, input, check, randomnumber} from './new';
 import '../styles/index.scss';
 
 const output = document.getElementById("main");
 let stream = '';
 
-function appendOutput(string) {
+const appendOutput = (string) => {
   stream = `${stream}${'<br />'}${string}`;
-}
+};
 
 ( () => {
-  const string = "Here's the output: ";
+  const string = "The random number is: ";
   appendOutput(string);
-
+  const val1ue = document.getElementById("demo");
   output.innerHTML = stream;
+  input(); 
 })();
 
