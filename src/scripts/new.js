@@ -10,7 +10,7 @@ const random = () => {
 const randomnumber = random();
 const input = () => {
     let number = prompt("Enter any number between 0 & 100");
-    if (isNaN(number) || (number < 0 || number > 100)) {
+    if (isNaN(number) || (number < 0 || number > 100) || number == "") {
         input();
     }
     if (randomnumber == number) {
@@ -22,10 +22,10 @@ const input = () => {
 const check = (num) => {
     while (num > randomnumber && num != randomnumber) {
         let number = -1;
-        while (isNaN(number) || number < 0 || number > 100) {
+        while (isNaN(number) || number < 0 || number > 100 || number =="") {
             number = prompt("Please enter number less than " + num);
 
-            if (!isNaN(number) && number >= 0 && number <= 100) {
+            if (!isNaN(number) && number >= 0 && number <= 100 &&  number !="") {
                 num = number;
             }
         }
@@ -35,10 +35,10 @@ const check = (num) => {
     }
     while (num < randomnumber && num != randomnumber) {
         let number = -1;
-        while (isNaN(number) || number < 0 || number > 100) {
+        while (isNaN(number) || number < 0 || number > 100 || number =="") {
             number = prompt("Please enter number greater than " + num);
 
-            if (!isNaN(number) && number >= 0 && number <= 100) {
+            if (!isNaN(number) && number >= 0 && number <= 100 && number !="") {
                 num = number;
             }
 
