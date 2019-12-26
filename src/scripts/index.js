@@ -1,4 +1,4 @@
-import {stop, random, input, check, randomnumber} from './new';
+import {input, secret, attempt} from './numberguessing';
 import '../styles/index.scss';
 
 const output = document.getElementById("main");
@@ -9,10 +9,14 @@ const appendOutput = (string) => {
 };
 
 ( () => {
-  const string = "The random number is: ";
-  appendOutput(string);
-  const val1ue = document.getElementById("demo");
+  console.log(secret);
+  input();
+
+  const result = `Result is:  ${secret} and number of attempts are/is : ${attempt}`;
+  appendOutput(result);
+
   output.innerHTML = stream;
-  input(); 
+
+
 })();
 
