@@ -14,3 +14,4 @@ function appendOutput(string) {
   output.innerHTML = stream;
 })();
 
+import dice from './diceroller';
